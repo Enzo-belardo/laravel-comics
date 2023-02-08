@@ -1,1 +1,109 @@
-@import '~bootstrap/scss/bootstrap'
+@import '~bootstrap/scss/bootstrap';
+
+//header
+header{
+    color: blue;
+    nav{
+       display: flex;
+       width: 80%;
+       margin: auto;
+       justify-content: space-between;
+       align-items: center;
+       color: #0282f9 ;
+       ul{
+           display: flex;
+           li{
+               display: flex;
+               align-items: center;
+               padding: .3rem;
+               list-style-type: none;
+               cursor: pointer;
+               &.active,
+               &:hover{
+                  color: #0282f9 ;
+                  border-bottom: solid 2px #0282f9  ;  
+               }
+           }
+        }
+   }
+}
+.logo img{
+    width: 50%;
+    margin-top: .5rem;
+}
+
+
+ .search{
+    border: solid 1px #0282f9 ;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+ }
+
+
+ 
+
+//footer
+ footer{
+    background-image: url(../assets/img/footer-bg.jpg);
+    background-size: cover;
+}
+.container-top-foot{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+.nav-foot{
+    width: 45%;
+    display: flex;
+    flex-wrap: wrap;
+    ul{
+        list-style-type: none;
+        padding-left: 0;
+        padding-right: 1rem;
+        line-height: 1.2rem;
+        h4{
+            color:white  ;
+        }
+        li{
+            color: white ;
+        }
+    }
+}
+
+.image {
+    width: 35%;   
+    img{
+        width: 100% ;
+    }
+}
+.container-down-foot{
+    background-color: #303030;
+    div{
+        width: 80%;
+        margin: auto;
+        display: flex;
+        justify-content: space-between;
+
+        padding: .5rem 0;
+        div button{
+            border: solid 1px #0282f9 ;
+            padding: 0.5rem 1rem;
+            background-color: transparent;
+            color: white;
+        }
+        .icon{
+            color: #0282f9 ;
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            h3{
+                color: #0282f9 ;
+            }
+            img{
+                margin-left: 1rem;
+            }
+        }
+    }
+}
