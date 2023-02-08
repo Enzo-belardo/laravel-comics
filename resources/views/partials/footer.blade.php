@@ -45,6 +45,9 @@
                       <li>DC power visa</li>
                     </ul>            
                 </div>
+                <div>
+                    <p class="description">All site content TM  2020 DC Enterainment, unless otherwise <span class="desc">noted here</span> . All rights reserved <span class="desc">cookies settings</span> </p>
+                </div>
             </nav>
             <div class="image">
             <img src="{{ Vite::asset('resources/assets/img/dc-logo-bg.png') }}" alt="Logo">

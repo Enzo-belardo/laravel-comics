@@ -1,24 +1,19 @@
 <header>
-    <nav>
-        <div class="logo">
-        <img src="{{ Vite::asset('resources/assets/img/dc-logo.png') }}" alt="Logo">
-        </div>
-        <div class="list-nav">
-            <ul>
-                <li>CHARACTERS</li>
-                <li>COMICS</li>
-                <li>MOVIES</li>
-                <li>TV</li>
-                <li>GAMES</li>
-                <li>COLLECTIBLES</li>
-                <li>VIDEOS</li>
-                <li>FANS</li>
-                <li>NEWS</li>
-                <li>SHOP</li>
-            </ul>
-        </div>
-        <div>
-            <input class="search" type="search" name="" id="" placeholder="search">
-        </div>
-    </nav>  
+    <div class="container d-flex justify-content-between align-items-center py-3">
+       <div class="logo">
+         <img src="{{ Vite::asset('resources/assets/img/dc-logo.png') }}" alt="Logo dc">
+       </div>  
+
+      <nav>
+        <ul class="d-flex list-unstyled">
+          @foreach ($links as $element)
+            <li class="fw-bold"> {{ $element['link'] }} </li>
+          @endforeach
+        </ul>
+      </nav>
+
+      <div>
+        <input class="search" type="search" name="" id="" placeholder="Search">
+      </div>
+   </div>
 </header>

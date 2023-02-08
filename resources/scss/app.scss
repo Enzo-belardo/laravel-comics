@@ -2,38 +2,30 @@
 
 //header
 header{
-    color: blue;
+    color: #0282f9;
     nav{
-       display: flex;
-       width: 80%;
-       margin: auto;
-       justify-content: space-between;
-       align-items: center;
-       color: #0282f9 ;
-       ul{
-           display: flex;
-           li{
-               display: flex;
-               align-items: center;
-               padding: .3rem;
-               list-style-type: none;
-               cursor: pointer;
-               &.active,
-               &:hover{
-                  color: #0282f9 ;
-                  border-bottom: solid 2px #0282f9  ;  
-               }
-           }
+       color: black ;
+       ul>li{
+            margin-left: 1rem;
+            cursor: pointer;
+            &.active,
+            &:hover{
+                color: #0282f9 ;
+                border-bottom: solid 2px #0282f9  ;  
+            }
         }
-   }
+    }
 }
+
+
+   
 .logo img{
     width: 50%;
-    margin-top: .5rem;
 }
 
 
  .search{
+    width: 100px;
     border: solid 1px #0282f9 ;
     border-top: none;
     border-left: none;
@@ -41,7 +33,7 @@ header{
  }
 
 
- 
+
 
 //footer
  footer{
@@ -57,6 +49,7 @@ header{
 .nav-foot{
     width: 45%;
     display: flex;
+    margin-top: 3rem;
     flex-wrap: wrap;
     ul{
         list-style-type: none;
@@ -72,10 +65,17 @@ header{
     }
 }
 
+.description{
+    color: white;
+    .desc{
+        color:#0282f9;
+    }
+}
+
 .image {
     width: 35%;   
     img{
-        width: 100% ;
+        width: 400px ;
     }
 }
 .container-down-foot{
@@ -105,5 +105,46 @@ header{
                 margin-left: 1rem;
             }
         }
+    }
+}
+
+
+//comics home
+.jumbo{
+    background-image: url(../assets/img/jumbotron.jpg);
+    width: 100%;
+    height: 350px;
+    background-size: cover;
+}
+
+main{
+    background-color: #1c1c1c ;
+    color: white;
+    width: 100%;
+  }
+  
+.container-card{
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 3rem;
+    button{
+        padding: .5rem 2rem;
+        background-color: #0282f9;
+        color: white;  
+    } 
+}
+
+.product{
+    width: calc((100% / 6 ) - 1rem);
+    margin: .5rem;
+    img{
+        width: 100%;
+        height: 150px;
+    }
+    p{
+        font-size: 1rem;
     }
 }

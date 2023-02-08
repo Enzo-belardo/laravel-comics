@@ -2,19 +2,23 @@
 
 @section('main-content')
 
-@foreach ($comics as $element)
-    <div class="card">
-        <div class="image">
-            <img src="{{ $element['thumb'] }}" alt="cover {{ $element['title'] }}">
-        </div>
+<div class="jumbo">
+  
+</div>
 
-        <div class="description">
-            <p class="fw-bold text-center">
-                {{ $element['title'] }}
-            </p>
-        </div>
-    </div>
-@endforeach
+<div class="container-card">
+    @foreach ($comics as $element)
+      <div class="product">
+          <div class="cards">
+              <img src="{{ $element['thumb'] }}" alt="cover {{ $element['title'] }}">
+              <p class="text-center">
+                  {{ $element['title'] }}
+              </p>
+          </div>
+      </div>
+    @endforeach
+    <button>LOAD MORE</button>
+  </div>
 
     
 @endsection
